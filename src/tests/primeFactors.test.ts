@@ -6,7 +6,7 @@ import { primeFactorsCalculator } from '../core/primeFactors';
 // 3 -> [3] --> DONE
 // 3 * 3 -> [3,3] --> DONE
 // 3 * 2 -> [2,3] --> DONE
-// 5 * 5 -> [5,5]
+// 5 * 5 -> [5,5] --> DONE
 // 5 * 7 * 11 * 3 -> [3,5,7,11]
 
 
@@ -37,5 +37,9 @@ describe('Prime factors', () => {
 
   it('given 5 * 5 returns [5, 5]', () => {
     expect(primeFactorsCalculator(5 * 5)).toEqual([5, 5]);
+  });
+
+  it('given 5 * 7 * 11 * 3 returns [3,5,7,11]', () => {
+    expect(primeFactorsCalculator(5 * 7 * 11 * 3)).toEqual([3, 5, 7, 11]);
   });
 });
