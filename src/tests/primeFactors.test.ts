@@ -2,7 +2,7 @@ import { primeFactorsCalculator } from '../core/primeFactors';
 
 // 2 -> [2] --> DONE
 // 2 * 2 -> [2,2] --> DONE
-// 2 * 2 * 2 -> [2,2,2]
+// 2 * 2 * 2 -> [2,2,2] --> DONE
 // 3 -> [3]
 // 3 * 3 -> [3,3]
 // 3 * 2 -> [2,3]
@@ -21,5 +21,9 @@ describe('Prime factors', () => {
 
   it('given 2 * 2 * 2 returns [2, 2, 2]', () => {
     expect(primeFactorsCalculator(2 * 2 * 2)).toEqual([2, 2, 2]);
+  });
+
+  it('given 3 returns [3]', () => {
+    expect(primeFactorsCalculator(3)).toEqual([3]);
   });
 });
